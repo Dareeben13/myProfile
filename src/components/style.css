@@ -1,0 +1,139 @@
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+  height: 500px;
+}
+.header-section {
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  /* Flexbox container */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 40px;
+}
+
+.animate__fadeInDown {
+  animation: fadeInDown;
+  animation-duration: 2s;
+}
+
+.header-section > .content-wrapper > .nav-link a {
+  color: #0d0d0d;
+  font-weight: 900;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.content-wrapper > .nav-link a:hover {
+  color: #a6a6a6;
+  letter-spacing: 2px;
+}
+
+.content-wrapper > .nav-link {
+  width: 70px;
+  margin-left: 30px;
+  text-align: center;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding-left: 40px;
+}
+
+.social-icon-links {
+  display: flex;
+  align-items: center;
+  padding-right: 50px;
+}
+
+i.icon {
+  width: 30px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 100%;
+  line-height: 30px;
+  text-align: center;
+  color: #cccccc;
+  margin-right: 20px;
+  transition: 1s;
+}
+
+i.icon:hover {
+  background-color: #0059b3;
+}
+
+/* STYLES FOR HOME PAGE */
+
+.home {
+  margin-top: 250px;
+}
+
+.welcome-text > h3 {
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  margin-left: 250px;
+  color: #4d4d4d;
+}
+
+.dev-name > h1 {
+  font-size: 50px;
+  margin-left: 250px;
+  margin-top: 15px;
+  color: #4d4d4d;
+}
+
+.dev-job > h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  margin-left: 250px;
+  margin-top: 15px;
+  color: #4d4d4d;
+}
+
+.dev-info > p {
+  font-size: 18px;
+  text-align: justify;
+  margin-left: 250px;
+  margin-top: 13px;
+}
+
+/* BUTTONS STYLESS */
+
+.btn-div > .btn {
+  background-color: #000066;
+  color: #ffff;
+  text-transform: uppercase;
+  text-align: center;
+  min-width: 170px;
+  padding: 15px 15px;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+.btn-div > .btn:hover,
+.btn:focus {
+  text-decoration: none;
+  background-color: #9999ff;
+  color: #ffff;
+  box-shadow: #000066;
+}
+
+.home > .button-wrapper {
+  display: flex;
+  margin-left: 250px;
+  margin-top: 40px;
+  width: 400px;
+  justify-content: space-between;
+  align-items: center;
+}
